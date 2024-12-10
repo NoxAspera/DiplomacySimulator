@@ -117,4 +117,17 @@ int main(int argc, char** argv)
     adjacent = {"BAL", "LVN", "WAR", "SIL", "BER"};
     newProvence = provence("PRU", adjacent, false, 'c', 'n');
     provences.push_back(newProvence);
+    adjacent = {"SWE", "DEN", "BER", "PRU", "LVN"};
+    newProvence = provence("BAL", adjacent, false, 's', 'n');
+    provences.push_back(newProvence);
+    adjacent = {"BOT", "FIN", "NWY", "BAL", "SWE"};
+    newProvence = provence("SWE", adjacent, true, 'c', 'n');
+    provences.push_back(newProvence);
+    adjacent = {"SIL", "MUN", "TYR", "VIE", "GAL"};
+    newProvence = provence("BOH", adjacent, false, 'l', 'n');
+    provences.push_back(newProvence);
+    adjacent = {"BOH", "MUN", "VEN", "TRI", "VIE"};
+    newProvence = provence("TYR", adjacent, false, 'l', 'n');
+    provences.push_back(newProvence);
+    
 };
