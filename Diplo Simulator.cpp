@@ -22,7 +22,7 @@ int main(int argc, char** argv)
     newProvence = provence("POR", adjacent, true, 'c', 'n');
     provences.push_back(newProvence);
     adjacent = {"MAO", "POR", "MAR", "LYO", "GAS", "WES"};
-    newProvence = provence("SPA", adjacent, true, 'c', 'n');
+    newProvence = provence("SPA", adjacent, true, 'd', 'n');
     provences.push_back(newProvence);
     adjacent = {"MAO", "WES", "TUN"};
     newProvence = provence("NAF", adjacent, false, 'c', 'n');
@@ -129,5 +129,146 @@ int main(int argc, char** argv)
     adjacent = {"BOH", "MUN", "VEN", "TRI", "VIE"};
     newProvence = provence("TYR", adjacent, false, 'l', 'n');
     provences.push_back(newProvence);
-    
+    adjacent = {"BUD", "VIE", "VEN", "TYR", "ADR", "ALB", "SER"};
+    newProvence = provence("TRI", adjacent, true, 'c', 'a');
+    provences.push_back(newProvence);
+    adjacent = {"BUD", "GAL", "TYR", "TRI", "BOH"};
+    newProvence = provence("VIE", adjacent, true, 'l', 'a');
+    provences.push_back(newProvence);
+    adjacent = {"SER", "RUM", "GAL", "VIE", "TYR"};
+    newProvence = provence("BUG", adjacent, true, 'l', 'a');
+    provences.push_back(newProvence);
+    adjacent = {"WAR", "BUD", "RUM", "VIE", "UKR", "SIL", "BOH"};
+    newProvence = provence("GAL", adjacent, false, 'l', 'n');
+    provences.push_back(newProvence);
+    adjacent = {"TYR", "TRI", "PIE", "TUS", "ROM", "APU", "ADR"};
+    newProvence = provence("VEN", adjacent, true, 'c', 'i');
+    provences.push_back(newProvence);
+    adjacent = {"MAR", "VEN", "TUS", "LYO", "TYR"};
+    newProvence = provence("PIE", adjacent, false, 'c', 'n');
+    provences.push_back(newProvence);
+    adjacent = {"ROM", "VEN", "TYS", "LYO", "PIE"};
+    newProvence = provence("TUS", adjacent, false, 'c', 'n');
+    provences.push_back(newProvence);
+    adjacent = {"NAP", "VEN", "TUS", "APU", "TYR"};
+    newProvence = provence("ROM", adjacent, true, 'c', 'i');
+    provences.push_back(newProvence);
+    adjacent = {"ROM", "APU", "ION", "TYS"};
+    newProvence = provence("NAP", adjacent, true, 'c', 'i');
+    provences.push_back(newProvence);
+    adjacent = {"VEN", "TRI", "APU", "ION", "ALB"};
+    newProvence = provence("ADR", adjacent, false, 's', 'n');
+    provences.push_back(newProvence);
+    adjacent = {"TUN", "TYS", "APU", "NAP", "ALB", "GRE", "AEG", "LEV", "ADR"};
+    newProvence = provence("ION", adjacent, false, 's', 'n');
+    provences.push_back(newProvence);
+    adjacent = {"TUN", "TYS", "APU", "NAP", "ALB", "GRE", "AEG", "LEV", "ADR"};
+    newProvence = provence("ION", adjacent, false, 's', 'n');
+    provences.push_back(newProvence);
+    adjacent = {"BUL", "CON", "SMY", "NAP", "GRE", "LEV", "ION"};
+    newProvence = provence("AEG", adjacent, false, 's', 'n');
+    provences.push_back(newProvence);
+    adjacent = {"ION", "AEG", "SMY", "SYR"};
+    newProvence = provence("LEV", adjacent, false, 's', 'n');
+    provences.push_back(newProvence);
+    adjacent = {"LEV", "ARM", "SMY"};
+    newProvence = provence("SYR", adjacent, false, 'c', 'n');
+    provences.push_back(newProvence);
+    adjacent = {"LEV", "ARM", "AEG", "CON", "ANK", "ARM", "SYR"};
+    newProvence = provence("SMY", adjacent, true, 'c', 't');
+    provences.push_back(newProvence);
+    adjacent = {"ALB", "SER", "AEG", "BUL", "ION"};
+    newProvence = provence("GRE", adjacent, true, 'c', 'n');
+    provences.push_back(newProvence);
+    adjacent = {"TRI", "SER", "GRE", "ADR", "ION"};
+    newProvence = provence("ALB", adjacent, false, 'c', 'n');
+    provences.push_back(newProvence);
+    adjacent = {"TRI", "ALB", "GRE", "RUM", "BUD","BUL"};
+    newProvence = provence("SER", adjacent, true, 'l', 'n');
+    provences.push_back(newProvence);
+    adjacent = {"BUL", "SER", "BUD", "GAL", "UKR", "SEV", "BLA"};
+    newProvence = provence("RUM", adjacent, true, 'c', 'n');
+    provences.push_back(newProvence);
+    adjacent = {"RUM", "SER", "GRE", "CON", "BUD", "BUL", "AEG"};
+    newProvence = provence("BUL", adjacent, true, 'd', 'n');
+    provences.push_back(newProvence);
+    adjacent = {"SMY", "ANK", "BLA", "BUL", "AEG"};
+    newProvence = provence("CON", adjacent, true, 'c', 't');
+    provences.push_back(newProvence);
+    adjacent = {"SMY", "CON", "BLA", "ARM"};
+    newProvence = provence("ANK", adjacent, true, 'c', 't');
+    provences.push_back(newProvence);
+    adjacent = {"SMY", "ANK", "BLA", "SYR", "SEV"};
+    newProvence = provence("ARM", adjacent, false, 'c', 'n');
+    provences.push_back(newProvence);
+    adjacent = {"ARM", "RUM", "BLA", "UKR", "MOS"};
+    newProvence = provence("SEV", adjacent, true, 'c', 'r');
+    provences.push_back(newProvence);
+    adjacent = {"ARM", "RUM", "BUL", "CON", "SEV", "ANK"};
+    newProvence = provence("BLA", adjacent, false, 's', 'n');
+    provences.push_back(newProvence);
+    adjacent = {"WAR", "RUM", "GAL", "MOS", "SEV"};
+    newProvence = provence("UKR", adjacent, false, 'l', 'n');
+    provences.push_back(newProvence);
+    adjacent = {"PRU", "SIL", "GAL", "MOS", "UKR", "LVN"};
+    newProvence = provence("WAR", adjacent, true, 'l', 'r');
+    provences.push_back(newProvence);
+    adjacent = {"UKR", "SEV", "WAR", "LVN", "STP"};
+    newProvence = provence("MOS", adjacent, true, 'l', 'r');
+    provences.push_back(newProvence);
+    adjacent = {"PRU", "MOS", "WAR", "BOT", "STP", "BAL"};
+    newProvence = provence("LVN", adjacent, false, 'c', 'n');
+    provences.push_back(newProvence);
+    adjacent = {"FIN", "BOT", "BAR", "LVN", "MOS", "NWY"};
+    newProvence = provence("STP", adjacent, true, 'd', 'r');
+    provences.push_back(newProvence);
+    adjacent = {"STP", "NWY", "SWE", "BOT"};
+    newProvence = provence("FIN", adjacent, false, 'c', 'n');
+    provences.push_back(newProvence);
+
+    int eng_count = 0;
+    int rus_count = 0;
+    int ger_count = 0;
+    int tur_count = 0;
+    int fra_count = 0;
+    int ita_count = 0;
+    int aus_count = 0;
+    for(provence current: provences)
+    {
+        switch(current.get_owner())
+        {
+            case 'e':
+            {
+                eng_count ++;
+                break;
+            }
+            case 'r':
+            {
+                rus_count++;
+                break;
+            }
+            case 'g':
+            {
+                ger_count++;
+                break;
+            }
+            case 't':
+            {
+                tur_count++;
+            }
+            case 'i':
+            {
+                ita_count++;
+            }
+            case 'f':
+            {
+                fra_count++;
+            }
+            case 'a':
+            {
+                aus_count++;
+            }
+        }
+    }
+
 };

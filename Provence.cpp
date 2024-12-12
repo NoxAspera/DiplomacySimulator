@@ -7,7 +7,7 @@ class provence
         string name;
         vector<string> adjacent_provences;
         bool supply_center;
-        //l for land, c for coast, s for sea
+        //l for land, c for coast, s for sea, d for split (dual) coasts
         char type;
         //a for austria, e for england, f for france, g for germany, i for italy, r for russia, t for turkey, n for none
         char owner;
